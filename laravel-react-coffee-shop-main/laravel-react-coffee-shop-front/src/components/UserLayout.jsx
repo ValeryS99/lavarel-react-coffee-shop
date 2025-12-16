@@ -10,17 +10,17 @@ export default function UserLayout() {
     }
 
     return (
-        <div id="userLayout" className="user-layout">
+        <div id="userLayout" className="premium-layout">
             <Sidebar />
             <div className="main-content">
-                <header className="user-header">
-                    <div className="header-content">
-                        <h1 className="header-title">Личный кабинет</h1>
-                        <div className="user-info">
-                            <span className="user-name">{user?.name || 'Гость'}</span>
-                            <div className="user-avatar">
-                                <img src={`https://ui-avatars.com/api/?name=${user?.name || 'User'}&background=d4a373&color=fff`} alt="Avatar" />
-                            </div>
+                <header className="premium-header">
+                    <div className="header-title">
+                        Личный кабинет
+                    </div>
+                    <div className="user-badge">
+                        <span>{user?.name || 'Гость'}</span>
+                        <div className="avatar-small">
+                            <img src="https://ui-avatars.com/api/?name=User&background=random" alt="" />
                         </div>
                     </div>
                 </header>

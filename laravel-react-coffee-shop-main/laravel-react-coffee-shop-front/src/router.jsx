@@ -42,12 +42,8 @@ const router = createBrowserRouter([
         element: <UserLayout />,
         children: [
             {
-                path: 'info',
-                element: <User />
-            },
-            {
                 index: true,
-                element: <Navigate to="info" replace />
+                element: <User />
             }
         ]
     },
