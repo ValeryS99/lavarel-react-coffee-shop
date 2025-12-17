@@ -18,7 +18,7 @@ export default function Sidebar() {
     return (
         <aside className="premium-sidebar">
             <div className="brand-logo">
-                ☕ CoffeLove
+                ✨ Кофейная мечта
             </div>
             <nav>
                 <Link
