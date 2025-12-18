@@ -7,7 +7,8 @@ import User from './views/User';
 import AuthLayout from './components/AuthLayout';
 import MainLayout from './components/MainLayout';
 import UserLayout from './components/UserLayout';
-
+import MenuLayout from './components/MenuLayout';
+import CoffeeMenu from './views/CoffeeMenu';
 const router = createBrowserRouter([
     {
         path: '/',
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Main />
+                element: <Navigate to="/menu/coffee" replace />
             }
         ]
     },
@@ -48,9 +49,24 @@ const router = createBrowserRouter([
         ]
     },
     {
+        path: '/menu',
+        element: <MainLayout />,
+        children: [
+            {
+                path: 'coffee',
+                element: <CoffeeMenu />
+            },
+            {
+                index: true,
+                element: <Navigate to="coffee" replace />
+            }
+        ]
+    },
+    {
         path: '*',
         element: <NotFound />
     }
-]);
+]
+);
 
 export default router;

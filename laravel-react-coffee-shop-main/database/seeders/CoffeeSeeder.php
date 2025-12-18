@@ -8,33 +8,44 @@ class CoffeeSeeder extends Seeder
 {
     public function run(): void
     {
+
         \Illuminate\Support\Facades\DB::table('coffees')->insert([
             [
-                'name' => 'Espresso',
-                'description' => 'Strong and bold espresso shot.',
+                'name' => 'Эспрессо',
+                'description' => 'Крепкий и насыщенный эспрессо. Идеальное начало дня.',
                 'base_price' => 250.00,
                 'size_id' => 1,
-                'image' => '',
+                'image' => '/images/coffee/espresso.png',
                 'available' => true,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Latte',
-                'description' => 'Creamy milk with rich espresso.',
-                'base_price' => 500.00,
+                'name' => 'Латте',
+                'description' => 'Нежный кофе с молоком и густой пенкой. Мягкий вкус.',
+                'base_price' => 350.00,
                 'size_id' => 2,
-                'image' => '',
+                'image' => '/images/coffee/latte.png',
                 'available' => true,
                 'created_at' => now(),
                 'updated_at' => now()
             ],
             [
-                'name' => 'Cappuccino',
-                'description' => 'Espresso with steamed milk foam.',
-                'base_price' => 750.00,
+                'name' => 'Капучино',
+                'description' => 'Классический итальянский кофе с молочной пенкой.',
+                'base_price' => 380.00,
                 'size_id' => 3,
-                'image' => '',
+                'image' => '/images/coffee/cappuccino.png',
+                'available' => true,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+             [
+                'name' => 'Мокко',
+                'description' => 'Кофе с шоколадом и взбитыми сливками для сладкоежек.',
+                'base_price' => 420.00,
+                'size_id' => 3,
+                'image' => '/images/coffee/mocha.png',
                 'available' => true,
                 'created_at' => now(),
                 'updated_at' => now()

@@ -28,8 +28,8 @@ export default function Sidebar() {
                     {user.name}
                 </Link>
                 <Link
-                    to="/"
-                    className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+                    to="/menu/coffee"
+                    className={`nav-link ${location.pathname.startsWith('/menu') ? 'active' : ''}`}
                 >
                     Меню
                 </Link>

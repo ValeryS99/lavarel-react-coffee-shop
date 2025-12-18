@@ -10,7 +10,7 @@ export default function MainLayout() {
     }
 
     return (
-        <div id="mainLayout" className="premium-layout">
+        <div id="userLayout" className="premium-layout">
             <Sidebar />
             <div className="main-content">
                 <header className="premium-header">

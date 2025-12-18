@@ -12,7 +12,7 @@ export default function AuthLayout() {
         <div id="authLayout" className="auth-background">
             <div className="auth-content-box">
                 <div className="auth-brand">
-                    
+
                 </div>
                 <Outlet />
             </div>
